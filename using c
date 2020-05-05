@@ -1,0 +1,30 @@
+#include<stdio.h>
+ 
+int main()
+{
+ 	int i, j, m, n, arr[10][10], Sum = 0;
+ 	int *ptr;
+  
+ 	printf("\n Please Enter Num of elements in array:  :  ");
+ 	scanf("%d %d", &i, &j);
+ 
+ 	printf("\n Please Enter the elements \n");
+ 	for(m = 0; m < i; m++)
+  	{
+   		for(n = 0;n < j;n++)
+    	{
+      		scanf("%d", &arr[m][n]);
+    	}
+  	}
+   	  
+ 	for(m = 0; m < i; m++)
+  	{   
+  	    ptr = arr;
+   		Sum = Sum + arr[m][m];
+  	}
+ 
+ 	printf("\n The Sum of Diagonal Elements of a array=  %d", Sum );
+
+ 	return 0;
+}
+ 
